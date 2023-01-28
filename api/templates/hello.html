@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <img src="{{ response.picture.large }}" alt="Profile Picture" />
+    </div>
+
+    <h3>{{ response.name.title }}</h3>
+    <h1>{{ response.name.first }} {{ response.name.last }}</h1>
+
+    <div>
+      <p><strong>Location</strong></p>
+      <p>City: {{ response.location.city }}, {{ response.location.state }}</p>
+      <p>Country: {{ response.location.country }}</p>
+    </div>
+
+    <div>
+      <p><strong>Information</strong></p>
+      <p>Email: {{ response.email }}</p>
+      <p>Phone: {{ response.phone }}</p>
+    </div>
+  </body>
+</html>
